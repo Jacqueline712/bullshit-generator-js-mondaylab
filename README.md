@@ -33,5 +33,13 @@
 
 
 
+data.json：
+
+- famous —— 名人名言
+- bosh —— 废话
+- bosh_before/said/conclude —— 用来修饰和替换famous以及bosh里面的内容
+
+
+
 
 
