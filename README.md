@@ -20,6 +20,8 @@
 
 ```
 .
+├── browser
+	  ├── idnex.js 将浏览器要引入的资源统一放在这里加载
 ├── corpus 存放语料库文件
 	  ├── data.json
 ├── index.js 项目主文件，是一个可以运行的node.js脚本
@@ -29,6 +31,7 @@
        ├── random.js 用来提供随机算法
 	  ├── corpus.js 语料库，用来加载和保存文件功能（即loadCorpus和saveCorpus）
 	  ├── interact,ts 文章生成器的交互过程
+├── build.js 打包发布项目的代码
 ├── package.json 配置文件
 └── output 存放项目输入结果
 
@@ -40,7 +43,7 @@ data.json：
 
 - famous —— 名人名言
 - bosh —— 废话
-- bosh_before/said/conclude —— 用来修饰和替换famous以及bosh里面的内容
+- bosh_before/said/conclude —— 用来修饰和替换`famous`以及`bosh`里面的内容
 
 
 

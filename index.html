@@ -84,6 +84,8 @@
     <article></article>
   </main>
   <footer>改进版：<a href="https://github.com/akira-cn/bullshit-generator-js">bullshit-generator-js</a> 作者：月影</footer>
+  <!-- 直接使用type=“module”，来加载我们的模块 -->
+  <!-- ES Module 加载方式会增加 HTTP 请求数量，会影响网页的加载速度 -->
   <script type="module">
     import {generate} from './lib/generator.js';
     import {createRandomPicker} from './lib/random.js';
