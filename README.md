@@ -1,24 +1,18 @@
 # 狗屁不通文章生成器
 
-这是原版：https://github.com/menzi11/BullshitGenerator 的改进版本。
+## 材料backup
 
-用 Node.js 重写，改良了一点点策略。
+原版仓库：https://github.com/akira-cn/bullshit-generator-js
 
-在线访问 https://akira-cn.github.io/bullshit-generator-js
+juejin小册：[从前端到全栈](https://juejin.cn/book/7133100888566005763?utm_source=course_list)
 
-## 改进点
-
-- 语句更通顺了些（虽然还是狗屁不通🐶）。
-- 不会出现两句连着重复的鬼畜情况。
-- 段落结尾的句子结构是完整的。
+本仓库沉淀内容文章生成器 → 1-11节
 
 
 
+## 代码结构
 
-
-## 文章结构
-
-```
+```bash
 .
 ├── browser
 	  ├── idnex.js 将浏览器要引入的资源统一放在这里加载
@@ -39,7 +33,9 @@
 
 
 
-data.json：
+## 其他知识点
+
+**data.json：**
 
 - famous —— 名人名言
 - bosh —— 废话
@@ -47,29 +43,18 @@ data.json：
 
 
 
-两种读取命令行参数的方式：
+**两种读取命令行参数的方式：**
 
 - `process.argv`
 - `command-line-args`
 
 
 
-两种命令行交互的方式：
+**两种命令行交互的方式：**
 
 - `process.stdin` —— `process.stdin`是异步的，它继承`EventEmitter`对象，能够派发和监听事件。
 - `readline` —— node.js为我们提供的一个更好的内置模块，它是专门用来实现可交互命令行的。
 - `process.stdout.write` —— 可以向终端输出字符，可以理解为和`cosole.log`一样的效果。区别是 `console.log` 支持多个参数，且能够格式化字符串并自动输出回车符。也就是说，`console.log`基本上可以替代`process.stdout.write`功能且更强大，所以我们就基本上不需要使用`process.stdout.write`了。不过呢，如果我们不希望输出回车换行到终端，那还是可以使用`process.stdout.write`的。
-- ``
-
-
-
-
-
-
-
-
-
-
 
 
 
